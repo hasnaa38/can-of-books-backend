@@ -16,8 +16,8 @@ mongoose.connect(`${MONGO_SERVER}/CanOfBooks`, {useNewUrlParser: true, useUnifie
 app.get('/test', (request, response) => { response.send('test request received')}); //Checking the server
 
 //The seed function is needed to instantiate the collection, after requesting it, it can be commented
-/* const seedBooks = require('./models/Book.model');
-app.get('/seed-data', (req, res) => {
+const seedBooks = require('./models/Book.model');
+/* app.get('/seed-data', (req, res) => {
   seedBooks();
   res.json({'Message':'Book object created successfully'});
 }); */

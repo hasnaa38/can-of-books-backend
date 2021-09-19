@@ -8,6 +8,7 @@ const bookSchema = new mongoose.Schema({
     description: String,
     status: String,
     email: String,
+    image: String,
 });
 
 // 2- Database collection/object's model. Any object made based of this model will follow the schema
@@ -22,6 +23,7 @@ let seedBooks = () => {
             description: 'A book that describes how the human brain works in the simplest way possible.',
             status: 'Available',
             email: 'xxxxxx@gmail.com',
+            image: 'https://m.media-amazon.com/images/I/51Orxc8w68L.jpg',
         });
     let book2 = new bookModel(
         {
@@ -29,6 +31,7 @@ let seedBooks = () => {
             description: 'A novel about a person named Jacopo Ortis, who travels to Italy in despair after Napoleon invaded his country.',
             status: 'Available',
             email: 'xxxxxx@gmail.com',
+            image: 'https://images-na.ssl-images-amazon.com/images/I/41-xcZWm1CL.jpg',
         });
     let book3 = new bookModel(
         {
@@ -36,6 +39,7 @@ let seedBooks = () => {
             description: 'A novel that follows the turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner.',
             status: 'Available',
             email: 'xxxxxx@gmail.com',
+            image: 'https://i.pinimg.com/originals/3b/47/d1/3b47d124002685f2a3c67e47383232c7.jpg',
         });
         
     book1.save();
@@ -44,3 +48,4 @@ let seedBooks = () => {
 }
 
 module.exports = bookModel;
+// module.exports = seedBooks;

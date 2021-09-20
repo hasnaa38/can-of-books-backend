@@ -47,5 +47,5 @@ let seedBooks = () => {
     book3.save();
 }
 
-// module.exports = bookModel;
-module.exports = seedBooks;
+module.exports = bookModel;
+// module.exports = seedBooks;

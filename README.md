@@ -21,14 +21,16 @@ You can use this link to visit the app: **NETLIFY LINK**. Or, you can build it o
 * Node.js
 * JS
 * Axios
+* Express Body Parser (for the POST and DELETE requests)
 
 ## Change Log
 
-19-00-2021 7:00pm - Server now can response with 3 books coming from my database.
+19-09-2021 7:00pm - Server now can response with 3 books coming from my database.
+20-09-2021 9:00pm - Server now can handle POST and DELETE requests.
 
 ## Estimates
 
-### Sending Books Data From The Database
+### Sending Books Data From The Database (GET requests)
 
 Estimate of time needed to complete: 4 hours
 
@@ -38,6 +40,15 @@ Finish time: 10:00 pm
 
 Actual time needed to complete: 7 hours
 
+### Adding/Deleting Books (POST and DELETE requests)
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 06:30 pm
+
+Finish time: 09:00 pm
+
+Actual time needed to complete: 2:30 hours
 
 ## Credit and Collaborations
 

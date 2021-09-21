@@ -43,9 +43,27 @@ const deleteBookController = (req, res) => {
     });
 }
 
+// The PUT method (updating)
+const updateBookController = async (req, res) => {
+    console.log('PUT request - Updating a book');
+    let id = req.params.id;
+    let updatedData = req.body;
+    bookModel.findOne({ _id: id }).then(book => {
+        book.title = updatedData.title;
+        book.description = updatedData.description;
+        book.status = updatedData.status;
+        book.email = updatedData.email;
+        book.image = updatedData.image;
+        book.save();
+    });
+    let updatedList = await bookModel.find({});
+    res.status(200).json(updatedList); 
+}
+
 // Exporting
 module.exports = {
     getBooksListController,
     addBooksController,
-    deleteBookController
+    deleteBookController,
+    updateBookController
 };

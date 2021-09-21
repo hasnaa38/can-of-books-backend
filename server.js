@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 
-const { getBooksListController, addBooksController, deleteBookController } = require('./controllers/Book.controller');
+const { getBooksListController, addBooksController, deleteBookController, updateBookController } = require('./controllers/Book.controller');
 app.use(express.json());
 
 const PORT = process.env.PORT || 3001;
@@ -27,6 +27,9 @@ app.post('/add-book', addBooksController);
 // The DELETE method
 // When using params, we add /:id to the endpoint path
 app.delete('/delete-book/:id', deleteBookController);
+
+// The PUT method
+app.put('/update-book/:id', updateBookController);
 
 //The seed function is needed to instantiate the collection, after requesting it, it can be commented
 /* const seedBooks = require('./models/Book.model');

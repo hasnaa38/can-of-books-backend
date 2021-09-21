@@ -1,7 +1,7 @@
 # Can of Books
 
 **Author**: Hasnaa Al-Habahbeh
-**Version**: 1.0.0
+**Version**: 3.0.0
 
 ## Overview
 
@@ -27,6 +27,7 @@ You can use this link to visit the app: **NETLIFY LINK**. Or, you can build it o
 
 19-09-2021 7:00pm - Server now can response with 3 books coming from my database.
 20-09-2021 9:00pm - Server now can handle POST and DELETE requests.
+21-09-2021 5:10pm - Server now can handle PUT requests.
 
 ## Estimates
 
@@ -49,6 +50,16 @@ Start time: 06:30 pm
 Finish time: 09:00 pm
 
 Actual time needed to complete: 2:30 hours
+
+### Updating Book Information (PUT request)
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 04:30 pm
+
+Finish time: 05:10 pm
+
+Actual time needed to complete: 45 minutes
 
 ## Credit and Collaborations
 
